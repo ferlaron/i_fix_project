@@ -1,0 +1,34 @@
+{% block header %}
+{% load static %}
+
+<nav class="navbar navbar-light bg-light">
+  <div class="container flex-column flex-md-row flex-lg-row justify-content-between">
+
+    <a class="navbar-brand" href="\">
+      <img src="{% static 'img/logo.png' %}" alt="Logo" class="logo-block">
+      <div class="">
+        Экспресс Сервис
+      </div>
+      <div class="">
+        Выездной ремонт Apple
+      </div>
+
+    </a>
+
+    <a class="">Цены</a>
+    <a class="">Отзывы</a>
+
+    <div class="phone-button-block">
+      <a class="btn btn-legacy font-text" href="tel:88007071172">
+        <i class="fa fa-phone"></i>
+        <span>8 (800) 707-11-72</span><br />
+        <span>С 9:00 до 24:00</span>
+      </a>
+    </div>
+
+    <button type="button" class="btn btn-danger">Заказать звонок</button>
+
+  </div>
+</nav>
+
+{% endblock header %}

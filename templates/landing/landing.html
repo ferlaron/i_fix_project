@@ -1,0 +1,16 @@
+{% extends "wrapper.html" %}
+
+{% block content %}
+
+<section class="posts">
+  <div class="container">
+      {% for post in posts %}
+        <div class="row">
+          <h3>{{ post.post_title }}</h3>
+          <div class="html-block">{{ post.post_content|safe }}</div>
+        </div>
+      {% endfor %}
+  </div>
+</section>
+
+{% endblock %}
